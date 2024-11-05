@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tela1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:background="#624C9B"
+            android:gravity="fill"
+            android:text="Quiz Bandeiras"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#47337A"
+            android:text="Qual país é este?"
+            android:textColor="#D1D1D1"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="?android:attr/listDivider"
+            android:visibility="invisible" />
+
+        <!-- Bandeira do país -->
+        <ImageView
+            android:id="@+id/imageViewFlag"
+            android:layout_width="224dp"
+            android:layout_height="163dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/brasil" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="?android:attr/listDivider"
+            android:visibility="invisible" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupOptions"
+            android:layout_width="match_parent"
+            android:layout_height="215dp">
+
+            <RadioButton
+                android:id="@+id/radioOpção1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Opção 1" />
+
+            <RadioButton
+                android:id="@+id/radioOpção2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Opção 2" />
+
+            <RadioButton
+                android:id="@+id/radioOpção3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Opção 3" />
+
+            <RadioButton
+                android:id="@+id/radioOpção4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Opção 4" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnResponder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RESPONDER"
+            android:layout_below="@id/radioGroupOptions"
+            android:enabled="false" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
